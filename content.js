@@ -171,8 +171,8 @@
     togglePillBtn.type = 'button';
     togglePillBtn.className = 'cgpt-bm-toggle-btn';
     togglePillBtn.setAttribute('data-cgpt-bm-ui', 'true');
-    togglePillBtn.setAttribute('aria-label', 'Open saved text bookmarks');
-    togglePillBtn.title = 'Saved Text Bookmarks';
+    togglePillBtn.setAttribute('aria-label', 'Open Pinpoint bookmarks');
+    togglePillBtn.title = 'Pinpoint Bookmarks';
     togglePillBtn.innerHTML = `
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
@@ -189,7 +189,7 @@
     sidebarEl = document.createElement('aside');
     sidebarEl.className = 'cgpt-bm-sidebar';
     sidebarEl.setAttribute('data-cgpt-bm-ui', 'true');
-    sidebarEl.setAttribute('aria-label', 'Saved Text Bookmarks');
+    sidebarEl.setAttribute('aria-label', 'Pinpoint Bookmarks');
     sidebarEl.innerHTML = `
       <div class="cgpt-bm-sidebar-header">
         <div class="cgpt-bm-sidebar-title-row">
@@ -197,7 +197,7 @@
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
             </svg>
-            <span>Text Bookmarks</span>
+            <span>Pinpoint</span>
           </div>
           <div class="cgpt-bm-header-actions">
             <button type="button" class="cgpt-bm-icon-btn" data-action="menu" aria-label="More options" aria-haspopup="menu" aria-expanded="false" title="Backup, restore and troubleshooting">${ICONS.kebab}</button>
@@ -1598,7 +1598,7 @@
   async function handleCopyHealthReport() {
     if (!lastHealthResult) await runHealth(true);
     const report = {
-      report: 'ChatGPT Text Bookmarker page-check report (contains no chat text)',
+      report: 'Pinpoint page-check report (contains no chat text)',
       extensionVersion: extensionVersion(),
       collectedAt: new Date().toISOString(),
       browser: navigator.userAgent,

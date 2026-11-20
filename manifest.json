@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Text Bookmarker",
-  "version": "1.5.0",
+  "name": "Pinpoint",
+  "version": "1.5.1",
   "description": "Bookmark specific sentences, paragraphs, formulas, or code snippets inside ChatGPT responses and scroll back to the exact passage.",
   "permissions": [
     "storage",
@@ -14,7 +14,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Toggle ChatGPT Bookmarks Sidebar"
+    "default_title": "Toggle Pinpoint Sidebar"
   },
   "content_scripts": [
     {

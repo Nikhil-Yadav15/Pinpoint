@@ -1,15 +1,20 @@
-# ChatGPT Text Bookmarker (Chrome Extension — Manifest V3)
+# Pinpoint (Chrome Extension — Manifest V3)
 
 A lightweight Chrome Extension that lets you select and bookmark specific sentences, paragraphs, mathematical formulas, or code snippets inside ChatGPT assistant responses—and later click any saved bookmark to scroll directly to and temporarily highlight that exact passage.
 
 ## Quick Installation / Reloading (Load Unpacked)
 
-1. Download and extract `chatgpt-text-bookmarker-extension.zip` into a folder on your computer.
+1. Download and extract the extension folder into a folder on your computer.
 2. Open Google Chrome and navigate to `chrome://extensions`.
 3. Enable **Developer mode** using the toggle switch in the top-right corner.
 4. Click **Load unpacked** in the top-left action bar (or click the **Reload** icon on the existing extension card).
-5. Select the extracted extension folder (the folder containing `manifest.json`).
+5. Select the extension folder (the folder containing `manifest.json`).
 6. Open or refresh [https://chatgpt.com](https://chatgpt.com) and select any text inside an assistant response.
+
+## v1.5.1 — Pinpoint Rebrand & OpenAI Emerald Theme
+
+- **Rebranded to Pinpoint**: Clean, modern identity with updated extension icons across 16px, 48px, and 128px resolutions.
+- **OpenAI Emerald Design System**: Refreshed UI tokens to OpenAI's native emerald palette (`#10A37F`), translucent glassmorphism surfaces (`backdrop-filter: blur(20px)`), frosted pill controls, and pulse status indicators.
 
 ## Supported ChatGPT DOM Attributes (v1.1)
 
